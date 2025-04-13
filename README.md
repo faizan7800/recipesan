@@ -1,8 +1,33 @@
-# React + Vite
+# 🥗 React Recipes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and user-friendly recipe website built using **ReactJS** and powered by the **Edamam Recipe Search API**. Users can search for recipes based on ingredients or keywords and browse through various food categories to explore delicious dishes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+
+- 🔍 **Search Recipes** by name or ingredients  
+- 📂 **Browse by Categories** (like Breakfast, Dessert, Vegan, etc.)  
+- 📃 **Detailed Recipe View** with ingredients, cooking instructions, and nutrition info  
+- 🌐 **API Integration** with [Edamam Recipe Search API](https://developer.edamam.com/edamam-recipe-api)  
+- 📱 Fully responsive for all screen sizes  
+- 🔄 Caching and loading states for smooth user experience  
+
+---
+
+## 🧪 Tech Stack
+
+- **Frontend:** React, Tailwind CSS  
+- **API:** Edamam Recipe Search API  
+- **Routing:** React Router  
+- **State Management:** useState, useEffect  
+- **Other Utilities:** IndexedDB (for caching), Custom Hooks  
+
+---
+
+## 📦 Installation & Running Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react-recipes-app.git
+   cd react-recipes-app
