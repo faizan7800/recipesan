@@ -113,6 +113,7 @@ const Landing = () => {
             onClick={() => navigate("/search")}
             className=" h-[42px] w-[120px] rounded-2xl bg-[#544B3D] text-sm font-bold text-[#CCFCCE] hover:bg-[#9f8b6a] active:bg-yellow-300 active:text-black md:h-[54px] md:w-[180px] md:text-lg "
           >
+            {/* Start now button text */}
             Start now
           </button>
         </div>

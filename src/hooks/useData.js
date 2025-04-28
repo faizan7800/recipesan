@@ -32,8 +32,8 @@ const useData = (q = "", dietType = "balanced", uri = "", baseUrl) => {
         baseUrl +
           new URLSearchParams({
             type: "public",
-            app_id: "a7d231db",
-            app_key: "3f704da2f4432db96f2ca99f96d2376d",
+            app_id: process.env.VITE_APP_ID, 
+            app_key: process.env.VITE_APP_KEY,
             ...query,
           }),{
             headers: {
