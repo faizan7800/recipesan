@@ -13,9 +13,9 @@ function Navbar() {
     <header className="px-24 max-[950px]:px-1">
       <h3 className="text-2xl font-bold">Recipesan</h3>
       <nav ref={navRef}>
-        <a href="/#">Home</a>
-        <a href="/#">Recipe</a>
-        <a href="/#">About Us</a>
+        <a href="/">Home</a>
+        <a href="/recipe">Recipe</a>
+        <a href="/about">About Us</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

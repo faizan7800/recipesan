@@ -18,7 +18,7 @@ const RecipeSearch = () => {
   //search box state
   const [value, setValue] = useState("");
   //Diet type tabs state
-  const [dietType, setDietType] = useState("balanced");
+  const [dietType, setDietType] = useState("high-protein");
   const dietTabs = diets.map((diet) => {
     return (
       <DietTab

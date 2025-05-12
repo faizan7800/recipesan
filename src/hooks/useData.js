@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import useLoading from "./useLoading";
 import { addData, dbPromise } from "../utils/indexedDB";
 
-const useData = (q = "", dietType = "balanced", uri = "", baseUrl) => {
+const useData = (q = "", dietType = "low-fat", uri = "", baseUrl) => {
   const { setIsLoading } = useLoading();
   const [data, setData] = useState(null);
+  const appId = import.meta.env.VITE_APP_ID;
+  const appKey = import.meta.env.VITE_APP_KEY;
   useEffect(() => {
     const getDataFromIdb = async () => {
       try {
@@ -32,8 +34,8 @@ const useData = (q = "", dietType = "balanced", uri = "", baseUrl) => {
         baseUrl +
           new URLSearchParams({
             type: "public",
-            app_id: process.env.VITE_APP_ID, 
-            app_key: process.env.VITE_APP_KEY,
+            app_id: appId, 
+            app_key: appKey,
             ...query,
           }),{
             headers: {
